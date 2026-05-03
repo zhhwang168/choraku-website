@@ -150,6 +150,7 @@ img{display:block;max-width:100%;height:auto}
 .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
 .map-wrap{border-radius:20px;overflow:hidden;box-shadow:0 12px 28px rgba(91,54,35,.1)}
 .map-wrap img{width:100%;display:block}
+.map-wrap iframe{width:100%;display:block;border:0;}
 .access-info{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px}
 .access-info h3{color:var(--red);font-size:22px;margin-bottom:16px}
 .access-row{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
@@ -468,7 +469,6 @@ img{display:block;max-width:100%;height:auto}
         </dl>
         <div class="shop-photos">
           <img src="images/logo.jpg" alt="店舗外観"/>
-          <img src="images/map2.png" alt="店舗周辺"/>
         </div>
       </div>
       <div class="note">正式版では座席数・支払方法・禁煙情報・テイクアウト対応なども追記します。</div>
@@ -487,11 +487,16 @@ img{display:block;max-width:100%;height:auto}
       </div>
       <div class="access-grid">
         <div>
-          <div class="map-wrap" style="margin-bottom:14px">
-            <img src="images/map1.png" alt="周辺地図"/>
-          </div>
           <div class="map-wrap">
-            <img src="images/map4.png" alt="広域地図"/>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.901138959911!2d137.14732041222132!3d34.934016272724435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004bd694bff97f3%3A0xddd7b5874c438bd2!2sChouraku%20Okazaki!5e0!3m2!1sen!2sjp!4v1777802524378!5m2!1sen!2sjp"
+              width="100%"
+              height="420"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
         <div>
@@ -502,11 +507,8 @@ img{display:block;max-width:100%;height:auto}
             <div class="access-row"><span class="label">お車</span><span>駐車場あり・ご利用いただけます</span></div>
             <div class="access-row"><span class="label">電話</span><span><a href="tel:0564553181" style="color:var(--red)">0564-55-3181</a></span></div>
           </div>
-          <div style="margin-top:14px">
-            <img src="images/map3.png" alt="店舗案内図" style="width:100%;border-radius:16px"/>
-          </div>
           <div class="note" style="margin-top:14px">
-            正式版ではGoogle Mapの埋め込みも追加します。QRコードをメニューや名刺に掲載すると便利です。
+            地図上の「Chouraku Okazaki」をクリックするとGoogle Mapsアプリで開きます。
           </div>
         </div>
       </div>
@@ -540,9 +542,7 @@ img{display:block;max-width:100%;height:auto}
         <div class="form-card">
           <div style="text-align:center;padding:20px 0 10px;">
             <p style="color:var(--brown);font-size:15px;margin-bottom:20px;">下のボタンからオンライン予約フォームへお進みください。</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV2aNqg7QruG39vuEqeJzygyLiGtzSNv9_jtH9IC_mbrNrwA
-/viewform" 
-
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdV2aNqg7QruG39vuEqeJzygyLiGtzSNv9_jtH9IC_mbrNrwA/viewform"
                target="_blank"
                style="display:inline-flex;align-items:center;justify-content:center;
                       background:var(--red);color:#fff;padding:18px 48px;
