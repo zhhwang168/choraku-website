@@ -1,5 +1,7 @@
 # 台湾料理 長楽 — 公式ウェブサイト
 
+🌐 **网站地址**: [https://choraku-website.vercel.app/](https://choraku-website.vercel.app/)
+
 > 🍜 岡崎市上和田町の台湾料理店「長楽」の公式サイトです。
 
 ---
